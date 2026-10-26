@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reis Saúde · Identidade visual</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--mid:#0E2A47;--card:#1F5FA8;--red:#E5383B;--mist:#EEF2F7;--pulse:#FF5A5F;--dust:#8FA9C9;--mut:#5b6b80;--c1:#0E2A47;--c2:#E5383B;--c3:#E5383B;--bm:multiply;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--mist);color:var(--mid);font:300 16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3,b,.sora{font-family:Sora,Inter,sans-serif;font-weight:300;letter-spacing:-.01em;margin:0}
+section{padding:72px max(20px,5vw)}.wrap{max-width:1180px;margin:0 auto}
+h2{font-size:clamp(26px,3.6vw,38px);line-height:1.1;margin-bottom:12px}
+.lead{max-width:58ch;color:var(--mut)}
+.r1{fill:var(--c1)}.r2{fill:var(--c2);mix-blend-mode:var(--bm)}.pl{fill:none;stroke:var(--c3);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.rev{--c1:#fff;--c2:#FF5A5F;--c3:var(--pulse);--bm:normal}
+.mono{display:block}
+.lock{display:flex;align-items:center;gap:.5em;font-size:var(--s,20px)}
+.lock .mono{width:3.1em}
+.lock .t{display:flex;flex-direction:column;line-height:1}
+.lock b{font-weight:300;font-size:1.25em;letter-spacing:.2em}
+.lock i{font:300 .56em Sora;font-style:normal;letter-spacing:.62em;margin-top:.6em;color:var(--card)}
+.rev i{color:#c9d9ee}
+.stack{flex-direction:column;text-align:center;gap:.7em}.stack .t{align-items:center}.stack .mono{width:4.4em}
+/* panels */
+.mos{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.p{min-height:340px;display:grid;place-items:center;position:relative;overflow:hidden}
+.p.mist{background:#e3e9f0}.p.dark{background:var(--mid)}
+.photo{background:linear-gradient(180deg,rgba(143,169,201,.55),rgba(14,42,71,.75)),radial-gradient(circle at 50% 28%,#c8d6e8 0 70px,transparent 71px),radial-gradient(ellipse at 50% 100%,#9fb7d3 0 150px,transparent 151px),#6f8db3;color:#fff}
+.photo .lock{position:absolute;left:9%;bottom:12%}
+.note{position:absolute;top:14px;right:16px;font-size:11px;opacity:.7}
+.desk{margin-top:0;background:radial-gradient(circle at 20% 10%,#f6f8fb,transparent 50%),radial-gradient(circle at 90% 80%,#d5dde8,transparent 55%),#e6ebf1;padding:60px max(16px,4vw);display:flex;justify-content:center;gap:28px;flex-wrap:wrap;align-items:center}
+.cards{position:relative;width:300px;height:300px;perspective:900px}
+.bc{position:absolute;width:250px;height:150px;border-radius:8px;box-shadow:0 22px 30px -14px rgba(14,42,71,.5),0 2px 0 rgba(0,0,0,.15);transform:rotateX(50deg) rotateZ(-28deg);display:grid;place-items:center}
+.bc.d{background:var(--mid);left:20px;top:0}.bc.d .mono{width:84px}
+.bc.l{background:#fff;left:0;top:130px;padding:16px;display:block}
+.bc.l hr{border:0;border-top:1px solid var(--mid);margin:0 0 6px}
+.bc.l small{display:block;font-size:8px;line-height:1.5}.bc.l .tag{font:300 6px Sora;letter-spacing:.3em;text-align:center;margin-bottom:10px}
+.bc.l .mono{position:absolute;right:16px;bottom:12px;width:34px}
+.env{width:230px;height:300px;background:#fff;border-radius:4px;box-shadow:0 24px 40px -20px rgba(14,42,71,.45);position:relative;display:grid;place-items:center}
+.env::before{content:"";position:absolute;left:0;right:0;top:0;height:78px;background:var(--dust);clip-path:polygon(0 0,100% 0,50% 100%)}
+.env .lock{margin-top:60px}
+.let{width:250px;height:340px;background:#fff;border-radius:3px;box-shadow:0 24px 40px -20px rgba(14,42,71,.45);padding:20px;position:relative}
+.let .lock{--s:9px}.let .f{position:absolute;left:20px;right:20px;bottom:16px;border-top:1px solid var(--dust);padding-top:8px;font-size:8px;color:var(--mut);display:flex;justify-content:space-between}
+.sign{width:260px;height:260px;border-radius:50%;background:#fff;box-shadow:0 28px 40px -18px rgba(14,42,71,.5);display:grid;place-items:center;position:relative}
+.sign svg.ring{position:absolute;inset:0}.sign .mono{width:104px}
+/* site */
+.hero{background:var(--mid);color:#fff;border-radius:28px;overflow:hidden;position:relative;margin-top:32px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 80% at 80% 40%,rgba(31,95,168,.7),transparent 70%)}
+.ecg{position:absolute;left:0;width:100%;top:55%;height:120px;opacity:.5}
+.ecg path{fill:none;stroke:var(--pulse);stroke-width:2;stroke-dasharray:1600;stroke-dashoffset:1600;animation:dr 3s ease-out .3s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.nav{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;margin:16px;padding:8px 10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;backdrop-filter:blur(12px);font-size:14px}
+.pill{border:0;border-radius:999px;padding:10px 16px;font:400 14px Inter;background:rgba(255,255,255,.14);color:#fff;cursor:pointer}.pill.w{background:#fff;color:var(--mid)}
+.hin{position:relative;z-index:2;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:end;padding:clamp(40px,7vw,90px) clamp(20px,4vw,48px) 44px}
+.hero h1{font-size:clamp(34px,5.6vw,68px);line-height:1;font-weight:300;letter-spacing:-.03em}
+.hero p{max-width:40ch;color:#c4d3e5;margin:18px 0 26px}
+.cta{display:inline-flex;gap:12px;align-items:center;background:var(--red);color:#fff;border:0;border-radius:999px;padding:12px 12px 12px 22px;font:400 15px Sora;cursor:pointer}.cta span{width:30px;height:30px;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center}
+.dr{background:#fff;color:var(--mid);border-radius:20px;padding:10px;max-width:280px;width:100%;justify-self:end}
+.ph{aspect-ratio:4/4;border-radius:12px;background:linear-gradient(160deg,#cfe0f3,#8fb4de);display:grid;place-items:center}.ph .mono{width:90px}
+.dr h3{font:400 15px Sora;margin:10px 4px 0}.dr small{display:block;margin:0 4px 10px;color:var(--mut)}.dr .pill{width:100%;background:var(--mid)}
+.ads{display:grid;grid-template-columns:1fr 1fr .6fr;gap:16px;margin-top:28px;align-items:start}
+.ad{border-radius:22px;padding:26px;aspect-ratio:1;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;color:#fff}
+.ad.s{aspect-ratio:9/16}.ad h3{font-size:clamp(20px,2.4vw,30px);line-height:1.1;position:relative}
+.ad .bg{position:absolute;right:-20%;bottom:-10%;width:85%;opacity:.14}
+.a1{background:var(--mid)}.a2{background:var(--card)}.a3{background:linear-gradient(170deg,var(--dust),var(--mid) 70%)}
+.chips{display:grid;grid-template-columns:repeat(5,1fr);border-radius:18px;overflow:hidden;margin-top:28px}
+.chips div{padding:48px 12px 12px;font:400 13px Sora;color:#fff}.chips small{display:block;font:300 11px Inter;opacity:.8}
+@media(max-width:820px){.mos,.hin,.ads{grid-template-columns:1fr}.dr{justify-self:start}.chips{grid-template-columns:1fr 1fr}.ad.s{aspect-ratio:1}.nav .hide{display:none}}
+@media(prefers-reduced-motion:reduce){.ecg path{animation:none;stroke-dashoffset:0}}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body{background:#081a2c;color:#e8eef6}:root:not([data-theme=light]) .lead{color:#a9b9cc}}
+:focus-visible{outline:3px solid var(--pulse);outline-offset:2px}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="M" viewBox="0 0 330 275"><text class="r1" x="0" y="228" font-family="Sora,Inter,sans-serif" font-weight="600" font-size="300">R</text><text class="r2" x="108" y="228" font-family="Sora,Inter,sans-serif" font-weight="600" font-size="300">R</text><path class="pl" d="M0 258H112l12-20 16 40 12-20H330"/></symbol>
+</defs></svg>
+
+<section style="padding-bottom:0"><div class="wrap">
+<h2>Marca: um monograma sóbrio</h2>
+<p class="lead">Dois R em Sora SemiBold, o de Reis em azul-noite e o de Raimundo em Vermelho Pulso, sobrepostos de forma discreta. Sob eles corre um traço de eletrocardiograma, com um único batimento: é o detalhe que diz “cardiologia” sem usar coração, estetoscópio ou outro clichê. O mesmo traço volta nas peças e na animação do site.</p>
+</div></section>
+
+<section style="padding-top:36px"><div class="wrap">
+<div class="mos">
+<div class="p mist"><div class="lock stack" style="--s:26px"><svg class="mono" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div></div>
+<div class="p dark"><div class="lock stack rev" style="--s:26px"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div></div>
+<div class="p photo"><span class="note">foto do Dr. Raimundo</span><div class="lock rev" style="--s:22px"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>DR. RAIMUNDO</b><i>REIS · CARDIOLOGIA</i></div></div></div>
+<div class="p mist" style="background:#fff"><div class="sign" style="box-shadow:0 20px 40px -20px rgba(14,42,71,.4)"><svg class="ring" viewBox="0 0 260 260"><defs><path id="c" d="M130 130m-104 0a104 104 0 1 1 208 0a104 104 0 1 1-208 0"/></defs><text font-family="Sora" font-weight="300" font-size="12" letter-spacing="4.5" fill="#0E2A47"><textPath href="#c" startOffset="2%">DR. RAIMUNDO REIS · CARDIOLOGISTA · CRM [Nº] ·</textPath></text></svg><svg class="mono" viewBox="0 0 330 275"><use href="#M"/></svg></div></div>
+</div>
+<div class="desk">
+<div class="cards"><div class="bc d"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg></div>
+<div class="bc l"><div class="tag">CUIDADO COM PRECISÃO</div><hr><small>(86) 0000-0000<br>contato@reissaude.com.br<br>@reissaude</small><svg class="mono" viewBox="0 0 330 275"><use href="#M"/></svg></div></div>
+<div class="env"><div class="lock stack" style="--s:11px"><svg class="mono" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div></div>
+<div class="let"><div class="lock" style="--s:9px"><svg class="mono" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div><div class="f"><span>(86) 0000-0000</span><span>Piauí, BR</span></div></div>
+</div>
+<div class="chips"><div style="background:var(--mid)">Azul Meia-Noite<small>#0E2A47</small></div><div style="background:var(--card)">Azul Cardíaco<small>#1F5FA8</small></div><div style="background:var(--red)">Vermelho Pulso<small>#E5383B</small></div><div style="background:#fff;color:var(--mid)">Névoa<small>#EEF2F7</small></div><div style="background:var(--pulse)">Pulso Claro<small>#FF5A5F</small></div></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>No site</h2>
+<p class="lead">Mesma linguagem: tipografia leve e ampla, muito espaço, e o vermelho só nos pontos de ação.</p>
+<div class="hero">
+<svg class="ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60h430l26-48 36 96 30-70 20 22h658"/></svg>
+<nav class="nav"><button class="pill">Menu</button><div class="lock rev" style="--s:12px"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div><div><button class="pill hide">(86) 0000-0000</button> <button class="pill w">Agendar</button></div></nav>
+<div class="hin"><div><h1>Coração em boas mãos, com precisão.</h1><p>Cardiologia clínica e preventiva, com tempo de consulta e acompanhamento contínuo.</p><button class="cta">Agendar consulta <span>→</span></button></div>
+<div class="dr"><div class="ph"><svg class="mono" viewBox="0 0 330 275" style="--c1:#fff;--c2:#fff;--c3:#fff;--bm:normal;opacity:.9"><use href="#M"/></svg></div><h3>Dr. Raimundo Reis</h3><small>Cardiologista · CRM [Nº]</small><button class="pill">Conhecer o médico</button></div></div></div>
+<div class="ads">
+<div class="ad a1"><svg class="bg rev" viewBox="0 0 330 275"><use href="#M"/></svg><h3>Pressão alta não avisa. O check-up, sim.</h3><div class="lock rev" style="--s:11px"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div></div>
+<div class="ad a2"><svg class="bg rev" viewBox="0 0 330 275"><use href="#M"/></svg><h3>Seu coração, uma consulta por vez.</h3><button class="cta" style="align-self:flex-start;background:#fff;color:var(--mid)">Agendar <span style="background:var(--red);color:#fff">→</span></button></div>
+<div class="ad s a3"><h3>Cuidado com precisão, do consultório à rotina.</h3><div class="lock rev" style="--s:10px"><svg class="mono rev" viewBox="0 0 330 275"><use href="#M"/></svg><div class="t"><b>REIS</b><i>SAÚDE</i></div></div></div>
+</div></div></section>
+</body></html>
